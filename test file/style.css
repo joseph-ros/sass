@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+}
+body .container {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  background-color: aquamarine;
+}
+
+.footer {
+  background-color: bisque;
+}/*# sourceMappingURL=style.css.map */

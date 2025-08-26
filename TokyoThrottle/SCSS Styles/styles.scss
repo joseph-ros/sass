@@ -1,0 +1,93 @@
+@import 'navbar';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    user-select: none;
+}
+
+.faster-font {
+    font-family: "Faster One", system-ui;
+    font-size: 4rem;
+    color: $orangeRed;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.fast-font {
+    font-family: "Racing Sans One", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 40px;
+    color: $speedRed;
+    padding-bottom: 50px;
+    margin-left: 30px;
+}
+
+.navbar .fast-font {
+    padding-top: 30px;
+}
+
+.hero {
+    background-color: $light;
+
+    &_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        height: 90vh;
+        z-index: 1;
+        width: 100%;
+        max-width: 1200px;
+        padding-right: 24px;
+        padding-left: 24px;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            height: 100%;
+            padding-left: 15px;
+        }
+
+        &--left {
+            width: 100%;
+            line-height: 1.2;
+        }
+
+        @include tablet {
+            padding: 5rem 0;
+        }
+
+        @include mobile {
+            line-height: 1.5;
+        }
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+
+        @include mobile {
+            font-size: 2rem;
+        }
+
+        &--btn {
+            padding: 20px;
+            background-color: $speedRed;
+            color: $light;
+            font-size: 1rem;
+            border: none;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: $orangeRed;
+                transition: all 0.3s ease-in-out;
+            }
+
+            @include tablet {
+                margin-left: 15px;
+            }
+        }
+    }
+}

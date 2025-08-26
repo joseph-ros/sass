@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyJoy</title>
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header" id="top-home">
+        <a href="#" class="logo"><i class="fa-solid fa-hands-holding-child"></i> ToyJoy</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./about.html">About</a>
+            <a href="./review.html">Review</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+        <form action="#" class="search-form">
+            <input type="search" placeholder="Search Here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./imgs/stickers.jpg" alt="Ducktales Stickers" height="100px">
+                <div class="content">
+                    <h3>Ducktales Stickers</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$10.57</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./imgs/ducktales.jpg" alt="The Art Of Ducktales" height="100px">
+                <div class="content">
+                    <h3>The Art Of Ducktales</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$16.00</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="./imgs/car.jpg" alt="Tomica GTR34" height="100px">
+                <div class="content">
+                    <h3>GTR34 Model</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <h2 class="total">Total: <span>$45.56</span></h2>
+            <a href="#" class="btn">Checkout Cart</a>
+        </div>
+        <form action="#" class="login-form">
+            <h3>Login Here</h3>
+            <input type="email" placeholder="Your Email..." id="" class="box">
+            <input type="password" placeholder="Your Password..." id="" class="box">
+            <div class="remember">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <input type="submit" value="Login Now" class="btn">
+            <p>Forgot Password? <a href="https://lastpass.com/vault/?lpnorefresh=1" target="_blank">Click Here</a>!</p>
+            <p>Don't Have An Account? <a href="./sign up form/sign-up.html" target="_blank">Create One</a>!</p>
+        </form>
+    </header>
+    <section class="home">
+        <div class="slides-container">
+            <swiper-container 
+                class="mySwiper" 
+                pagination="true" 
+                pagination-clickable="true" 
+                navigation="false" 
+                space-between="30" 
+                centered-slides="false" 
+                autoplay-delay="2000" 
+                autoplay-disable-on-interaction="false" 
+                loop="true" 
+                style="--swiper-pagination-color: #bac34e;"
+            >
+            <swiper-slide>
+                <div class="slide active">
+                    <div class="content">
+                        <span>Quick Deliveries</span>
+                        <h3>Below 30 Mins</h3>
+                        <a href="./shop.html" class="btn">Shop Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./imgs/fruits.jpg" alt="1">
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="slide active">
+                    <div class="content">
+                        <span>Up To Date</span>
+                        <h3>New Products Are Always Comin' In</h3>
+                        <a href="./shop.html" class="btn">Shop Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./imgs/vegetables.jpg" alt="1" width="500px">
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="slide active">
+                    <div class="content">
+                        <span>Cool Rare Products</span>
+                        <h3>Every Rare Product Is On Us</h3>
+                        <a href="./shop.html" class="btn">Shop Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./imgs/golft.jpg" alt="1" width="350px">
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+    </section>
+    <section class="banner-container">
+        <div class="banner">
+            <img src="./imgs/adventure.jpg" alt="1" width="400px" height="240px">
+            <div class="content">
+                <span>Buy It <span class="span">Now</span></span>
+                <h3 class="h3">Ducktales Adventurer's Guide</h3>
+                <a href="./shop.html" class="btn">Shop Now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="./imgs/car.jpg" alt="1" width="400px" height="240px">
+            <div class="content">
+                <span class="span">Limited Sale</span>
+                <h3 class="span">Ends On May 20</h3>
+                <a href="./shop.html" class="btn">Shop Now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="./imgs/wheel.jpg" alt="1" height="240px">
+            <div class="content">
+                <span>A Lucky Day!</span>
+                <h3>Spin Your Luck On The Lucky Wheel!</h3>
+                <a href="./contact.html" class="btn">Register Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#top-home"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="./shop.html"><i class="fas fa-arrow-right"></i> Shop</a>
+                <a href="./about.html"><i class="fas fa-arrow-right"></i> About</a>
+                <a href="./review.html"><i class="fas fa-arrow-right"></i> Review</a>
+                <a href="./blog.html"><i class="fas fa-arrow-right"></i> Blog</a>
+                <a href="./contact.html"><i class="fas fa-arrow-right"></i> Contact</a>
+            </div>
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> My Orders</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> My Favorite</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> My Wishlist</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> My Account</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Terms & Use</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us On</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe For The Latest Updates</p>
+                <form action="#">
+                    <input type="email" placeholder="Enter Your Email...">
+                    <input type="submit" value="Subscribe" class="btn">
+                </form>
+                <img src="./imgs/payment.png" alt="Payment" class="payment" width="300px">
+                <p>All Credit Cards Accepted</p>
+            </div>
+        </div>
+    </section>
+    <section class="credit">2025 Copyright &copy; | All Rights Reserved &reg;</section>
+</body>
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</html>

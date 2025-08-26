@@ -1,0 +1,75 @@
+.products .box-container {
+    @include grid(35rem);
+
+    .box {
+        position: relative;
+        background-color: $white;
+        text-align: center;
+        overflow: hidden;
+
+        &:hover .icons {
+            top: 0;
+        }
+
+        .icons {
+            position: absolute;
+            top: -105%;
+            left: 0;
+            height: 30rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(243, 243,243, .8);
+            gap: 1rem;
+
+            a {
+                font-size: 2rem;
+                height: 5rem;
+                width: 5rem;
+                line-height: 5rem;
+                color: $light-color;
+                background-color: $white;
+                box-shadow: $box-shadow;
+                border-radius: 5000px;
+
+                &:hover {
+                    background-color: $green;
+                    color: $white;
+                }
+            }
+        }
+
+        .image {
+            height: 30rem;
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            padding: 1.5rem;
+
+            h3 {
+                font-size: 2rem;
+                color: $black;
+            }
+
+            .price {
+                font-size: 2rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+
+            .stars i {
+                font-size: 1.7rem;
+                color: $yellow;
+            }
+        }
+    }
+}
