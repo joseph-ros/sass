@@ -1,0 +1,5 @@
+{
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.multiCursorMergeOverlapping": true,
+    "editor.multiCursorPaste": "spread"
+}
